@@ -39,7 +39,7 @@ header{
 
 .hero{
     margin-top: 100px;
-    height: calc(100vh-100px);
+    height: calc(100vh - 100px);
     background-image:url(Studying.jpg);
     background-size:cover;
     background-position:center;
@@ -115,7 +115,7 @@ nav a.active{
 }
 
 section{
-    min-height: 100bh;
+    min-height: 100vh;
     padding:5rem 9% 5rem;
 }
 
@@ -177,5 +177,58 @@ span{
     line-height:1.2;
 }
 .home-content h3{
-    font-size: 1.8rem;
+    font-size: 
+}
+
+@media (max-width: 768px) {
+
+  html {
+        font-size: 50%; 
+   }
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .hero {
+        padding-left: 2rem;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.6rem;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+    }
+
+    .home-img img {
+        width: 60vw;
+    }
+
 }
