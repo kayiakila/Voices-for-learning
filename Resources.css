@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+}
+
+html{
+    font-size:60%;
+}
+
+body{
+    width:100%;
+    height: 100vh;
+    overflow-x:hidden;
+    background-color: black;
+    color:white;
+
+}
+body{
+    padding-top: 90px;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:90px;
+    padding: 1rem 9%;
+    background-color:black;
+    filter:drop-shadow(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    position: sticky;
+    font-size:3rem;
+    color:blueviolet;
+    font-weight:800;
+    cursor:pointer;
+    transition: 0.5s ease;
+}
+.logo:hover{
+    transform:scale(1.1);
+
+
+}
+nav{
+    display:flex;
+    gap:3rem;
+}
+nav.a{
+    font-size:1.8rem;
+    color:white;
+    margin-left:4rem;
+    font-weight:500;
+    transition:0.3s ease;
+    border-bottom:3px solid transparent;
+}
+nav a:hover,
+nav a.active{
+   color:blueviolet;
+   border-bottom: 3px solid blueviolet; 
+}
+
+ nav a{
+    list-style: none;
+    font-size:2rem;
+ }
+
+ nav a:hover,
+nav a.active{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid blueviolet;
+}
+
+section{
+    min-height: 100bh;
+    padding:5rem 9% 5rem;
+}
+
+
+span{
+    color:blueviolet;
+}
+
+.resources-page{
+    padding:0.3rem 7%;
+    background-color: black;
+}
+
+.content-container{
+    max-width:900px;
+}
+
+.topic-box{
+    border: 2px solid blueviolet;
+    border-radius: 2rem;
+    padding:4rem;
+    margin-bottom:4rem;
+    background-color: rgba(98, 69, 125, 0.05);
+}
+
+.topic-box h3{
+    font-size: 2.5rem;
+    margin-bottom:3rem;
+    color:white;
+}
+
+.topic-box p{
+    font-size:1.8rem;
+    line-height:1.8;
+    color:#ddd;
+}
+
+.section-title{
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom:4rem;
+    color:white;
+    border-bottom:3px solid blueviolet;
+    padding-bottom: 1.8rem;
+}
+
+.resource-container{
+    border: 2px solid blueviolet;
+    padding:2rem;
+    border-radius:1rem;
+    margin-top:3rem;
+}
+
+.resources-container li{
+    font-size:1.8rem;
+    line-height:1.8;
+    margin-bottom:1.5rem;
+}
+.resources-container a{
+    font-size:1.8rem;
+    color:blueviolet;
+    word-break:break-word;
+}
